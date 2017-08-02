@@ -10,6 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet var label :UILabel!
+    
+    
+    var num :Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +26,20 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
+    
+    @IBAction func plus(){
+        num = num + 1
+        label.text = String(num)
+    }
+    @IBAction func mainus(){
+        num = num - 1
+        label.text = String(num)
+    }
+    @IBAction func cancel(){
+        num = 0
+        label.text = String(num)
+    }
 
 }
 
