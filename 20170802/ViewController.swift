@@ -30,14 +30,24 @@ class ViewController: UIViewController {
     
     @IBAction func plus(){
         num = num + 1
+        if num > 10{
+            label.textColor = UIColor.red
+        }
+        
         label.text = String(num)
     }
     @IBAction func mainus(){
         num = num - 1
+        if num <= 10{
+            label.textColor = UIColor.black
+        }
         label.text = String(num)
     }
     @IBAction func cancel(){
         num = 0
+        if num <= 10{
+            label.textColor = UIColor.black
+        }
         label.text = String(num)
     }
 
