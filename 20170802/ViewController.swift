@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class ViewController: UIViewController {
 
@@ -25,8 +26,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    
     
     @IBAction func plus(){
         num = num + 1
@@ -51,6 +50,11 @@ class ViewController: UIViewController {
         }
         label.text = String(num)
     }
-
+    @IBAction func show(){
+        SVProgressHUD.show()
+    }
+    @IBAction func dismiss(){
+       SVProgressHUD.dismiss()
+    }
 }
 
