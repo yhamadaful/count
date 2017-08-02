@@ -34,6 +34,7 @@ class ViewController: UIViewController {
             label.textColor = UIColor.red
         }
         
+        //　変更した
         label.text = String(num)
     }
     @IBAction func mainus(){
